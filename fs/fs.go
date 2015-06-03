@@ -68,9 +68,12 @@ type Context struct {
 
 func NewFsInfo(context Context) (FsInfo, error) {
 	mounts, err := mount.GetMounts()
+	glog.Infof("=== NewFsInfo context: %v\n", context)
 	if err != nil {
+		glog.Infof("=== NewFsInfo error: %v\n", err)
 		return nil, err
 	}
+	glog.Infof("=== NewFsInfo mounts: %v\n", mounts)
 	partitions := make(map[string]partition, 0)
 	fsInfo := &RealFsInfo{}
 	fsInfo.labels = make(map[string]string, 0)
