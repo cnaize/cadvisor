@@ -20,12 +20,12 @@ import (
 	"os"
 	"time"
 
+	"github.com/cnaize/cadvisor/manager"
+	"github.com/cnaize/cadvisor/storage"
+	"github.com/cnaize/cadvisor/storage/bigquery"
+	"github.com/cnaize/cadvisor/storage/influxdb"
+	"github.com/cnaize/cadvisor/storage/memory"
 	"github.com/golang/glog"
-	"github.com/google/cadvisor/manager"
-	"github.com/google/cadvisor/storage"
-	"github.com/google/cadvisor/storage/bigquery"
-	"github.com/google/cadvisor/storage/influxdb"
-	"github.com/google/cadvisor/storage/memory"
 )
 
 var argDbUsername = flag.String("storage_driver_user", "root", "database username")

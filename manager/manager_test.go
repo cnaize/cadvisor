@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/docker"
-	info "github.com/google/cadvisor/info/v1"
-	itest "github.com/google/cadvisor/info/v1/test"
-	"github.com/google/cadvisor/storage/memory"
-	"github.com/google/cadvisor/utils/sysfs/fakesysfs"
+	"github.com/cnaize/cadvisor/container"
+	"github.com/cnaize/cadvisor/container/docker"
+	info "github.com/cnaize/cadvisor/info/v1"
+	itest "github.com/cnaize/cadvisor/info/v1/test"
+	"github.com/cnaize/cadvisor/storage/memory"
+	"github.com/cnaize/cadvisor/utils/sysfs/fakesysfs"
 )
 
 // TODO(vmarmol): Refactor these tests.

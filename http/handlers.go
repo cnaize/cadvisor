@@ -19,15 +19,15 @@ import (
 	"net/http"
 
 	auth "github.com/abbot/go-http-auth"
+	"github.com/cnaize/cadvisor/api"
+	"github.com/cnaize/cadvisor/healthz"
+	httpMux "github.com/cnaize/cadvisor/http/mux"
+	"github.com/cnaize/cadvisor/manager"
+	"github.com/cnaize/cadvisor/metrics"
+	"github.com/cnaize/cadvisor/pages"
+	"github.com/cnaize/cadvisor/pages/static"
+	"github.com/cnaize/cadvisor/validate"
 	"github.com/golang/glog"
-	"github.com/google/cadvisor/api"
-	"github.com/google/cadvisor/healthz"
-	httpMux "github.com/google/cadvisor/http/mux"
-	"github.com/google/cadvisor/manager"
-	"github.com/google/cadvisor/metrics"
-	"github.com/google/cadvisor/pages"
-	"github.com/google/cadvisor/pages/static"
-	"github.com/google/cadvisor/validate"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

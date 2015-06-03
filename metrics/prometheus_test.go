@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	info "github.com/google/cadvisor/info/v1"
+	info "github.com/cnaize/cadvisor/info/v1"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

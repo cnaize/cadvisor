@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/google/cadvisor/events"
+	"github.com/cnaize/cadvisor/events"
 	"github.com/stretchr/testify/assert"
 )
 

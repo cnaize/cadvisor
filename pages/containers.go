@@ -26,9 +26,9 @@ import (
 	"strings"
 	"time"
 
+	info "github.com/cnaize/cadvisor/info/v1"
+	"github.com/cnaize/cadvisor/manager"
 	"github.com/golang/glog"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/manager"
 )
 
 const ContainersPage = "/containers/"

@@ -35,7 +35,7 @@ On CentOS and RHEL the cgroup hierarchies are mounted in `/cgroup` so run cAdvis
 
 ## Debian
 
-By default, Debian disables the memory cgroup which does not allow cAdvisor to gather memory stats. To enable the memory cgroup take a look at [these instructions](https://github.com/google/cadvisor/issues/432).
+By default, Debian disables the memory cgroup which does not allow cAdvisor to gather memory stats. To enable the memory cgroup take a look at [these instructions](https://github.com/cnaize/cadvisor/issues/432).
 
 ### LXC Docker exec driver
 

@@ -17,11 +17,11 @@ package raw
 import (
 	"fmt"
 
+	"github.com/cnaize/cadvisor/container"
+	"github.com/cnaize/cadvisor/container/libcontainer"
+	"github.com/cnaize/cadvisor/fs"
+	info "github.com/cnaize/cadvisor/info/v1"
 	"github.com/golang/glog"
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
 )
 
 type rawFactory struct {

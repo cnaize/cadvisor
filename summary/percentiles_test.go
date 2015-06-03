@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	info "github.com/google/cadvisor/info/v2"
+	info "github.com/cnaize/cadvisor/info/v2"
 )
 
 const Nanosecond = 1000000000

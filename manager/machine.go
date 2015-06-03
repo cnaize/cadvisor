@@ -24,15 +24,15 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/cnaize/cadvisor/container/docker"
+	"github.com/cnaize/cadvisor/fs"
+	info "github.com/cnaize/cadvisor/info/v1"
+	"github.com/cnaize/cadvisor/utils"
+	"github.com/cnaize/cadvisor/utils/sysfs"
+	"github.com/cnaize/cadvisor/utils/sysinfo"
+	version "github.com/cnaize/cadvisor/version"
 	dclient "github.com/fsouza/go-dockerclient"
 	"github.com/golang/glog"
-	"github.com/google/cadvisor/container/docker"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils"
-	"github.com/google/cadvisor/utils/sysfs"
-	"github.com/google/cadvisor/utils/sysinfo"
-	version "github.com/google/cadvisor/version"
 )
 
 var cpuRegExp = regexp.MustCompile("processor\\t*: +([0-9]+)")

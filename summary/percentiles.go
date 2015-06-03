@@ -21,8 +21,8 @@ import (
 	"math"
 	"sort"
 
+	info "github.com/cnaize/cadvisor/info/v2"
 	"github.com/golang/glog"
-	info "github.com/google/cadvisor/info/v2"
 )
 
 const secondsToMilliSeconds = 1000

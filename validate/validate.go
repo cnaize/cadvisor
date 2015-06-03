@@ -19,17 +19,17 @@ package validate
 
 import (
 	"fmt"
-	"github.com/google/cadvisor/manager"
+	"github.com/cnaize/cadvisor/manager"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"path"
 	"strings"
 
+	"github.com/cnaize/cadvisor/container/docker"
+	"github.com/cnaize/cadvisor/utils"
 	"github.com/docker/libcontainer/cgroups"
 	dclient "github.com/fsouza/go-dockerclient"
-	"github.com/google/cadvisor/container/docker"
-	"github.com/google/cadvisor/utils"
 )
 
 const (

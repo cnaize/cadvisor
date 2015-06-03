@@ -19,9 +19,9 @@ import (
 	"sync"
 	"time"
 
+	info "github.com/cnaize/cadvisor/info/v1"
+	"github.com/cnaize/cadvisor/storage"
 	"github.com/golang/glog"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/storage"
 )
 
 // TODO(vmarmol): See about refactoring this class, we have an unecessary redirection of containerStorage and InMemoryStorage.

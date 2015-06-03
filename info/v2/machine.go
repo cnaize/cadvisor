@@ -16,7 +16,7 @@ package v2
 
 import (
 	// TODO(rjnagal): Move structs from v1.
-	"github.com/google/cadvisor/info/v1"
+	"github.com/cnaize/cadvisor/info/v1"
 )
 
 type Attributes struct {

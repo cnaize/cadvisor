@@ -28,11 +28,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/cnaize/cadvisor/events"
+	httpMux "github.com/cnaize/cadvisor/http/mux"
+	info "github.com/cnaize/cadvisor/info/v1"
+	"github.com/cnaize/cadvisor/manager"
 	"github.com/golang/glog"
-	"github.com/google/cadvisor/events"
-	httpMux "github.com/google/cadvisor/http/mux"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/manager"
 )
 
 const (

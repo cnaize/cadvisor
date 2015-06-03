@@ -34,7 +34,7 @@ export GOPATH="$JENKINS_HOME/workspace/project"
 export GOBIN="$GOPATH/bin"
 
 # Build the runner.
-godep go build github.com/google/cadvisor/integration/runner
+godep go build github.com/cnaize/cadvisor/integration/runner
 
 # Run it.
 ./runner --logtostderr $HOSTS

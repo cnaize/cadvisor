@@ -11,7 +11,7 @@ This will build a cAdvisor from the current repository and start it on the targe
 To simply run the tests against an existing cAdvisor:
 
 ```
-$ godep go test github.com/google/cadvisor/integration/tests/... -host=HOST -port=PORT
+$ godep go test github.com/cnaize/cadvisor/integration/tests/... -host=HOST -port=PORT
 ```
 
 Note that `HOST` and `PORT` default to `localhost` and `8080` respectively.

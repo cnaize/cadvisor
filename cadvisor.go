@@ -24,11 +24,11 @@ import (
 	"runtime"
 	"syscall"
 
+	cadvisorHttp "github.com/cnaize/cadvisor/http"
+	"github.com/cnaize/cadvisor/manager"
+	"github.com/cnaize/cadvisor/utils/sysfs"
+	"github.com/cnaize/cadvisor/version"
 	"github.com/golang/glog"
-	cadvisorHttp "github.com/google/cadvisor/http"
-	"github.com/google/cadvisor/manager"
-	"github.com/google/cadvisor/utils/sysfs"
-	"github.com/google/cadvisor/version"
 )
 
 var argIp = flag.String("listen_ip", "", "IP to listen on, defaults to all IPs")

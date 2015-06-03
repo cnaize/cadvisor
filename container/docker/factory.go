@@ -23,15 +23,15 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/cnaize/cadvisor/container"
+	"github.com/cnaize/cadvisor/container/libcontainer"
+	"github.com/cnaize/cadvisor/fs"
+	info "github.com/cnaize/cadvisor/info/v1"
+	"github.com/cnaize/cadvisor/utils"
 	"github.com/docker/libcontainer/cgroups"
 	"github.com/docker/libcontainer/cgroups/systemd"
 	"github.com/fsouza/go-dockerclient"
 	"github.com/golang/glog"
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils"
 )
 
 var ArgDockerEndpoint = flag.String("docker", "unix:///var/run/docker.sock", "docker endpoint")

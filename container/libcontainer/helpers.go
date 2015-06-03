@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"time"
 
+	info "github.com/cnaize/cadvisor/info/v1"
 	"github.com/docker/libcontainer"
 	"github.com/docker/libcontainer/cgroups"
 	cgroupfs "github.com/docker/libcontainer/cgroups/fs"
 	"github.com/docker/libcontainer/network"
-	info "github.com/google/cadvisor/info/v1"
 )
 
 type CgroupSubsystems struct {

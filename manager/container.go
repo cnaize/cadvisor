@@ -22,14 +22,14 @@ import (
 	"sync"
 	"time"
 
+	"github.com/cnaize/cadvisor/container"
+	info "github.com/cnaize/cadvisor/info/v1"
+	"github.com/cnaize/cadvisor/info/v2"
+	"github.com/cnaize/cadvisor/storage/memory"
+	"github.com/cnaize/cadvisor/summary"
+	"github.com/cnaize/cadvisor/utils/cpuload"
 	"github.com/docker/docker/pkg/units"
 	"github.com/golang/glog"
-	"github.com/google/cadvisor/container"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/info/v2"
-	"github.com/google/cadvisor/storage/memory"
-	"github.com/google/cadvisor/summary"
-	"github.com/google/cadvisor/utils/cpuload"
 )
 
 // Housekeeping interval.
